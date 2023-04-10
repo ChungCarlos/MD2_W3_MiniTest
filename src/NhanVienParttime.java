@@ -4,7 +4,7 @@ public class NhanVienParttime extends NhanVien {
     private double phatPart;
 
 
-    public NhanVienParttime(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, String diaChi, double soGioLam, double thuongPart, double phatPart) {
+    public NhanVienParttime(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, DiaChi diaChi, double soGioLam, double thuongPart, double phatPart) {
         super(maNhanVien, hoTen, tuoi, soDienThoai, email, diaChi);
         this.soGioLam = soGioLam;
         this.thuongPart = thuongPart;

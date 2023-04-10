@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     private static QuanLyNhanVien quanLyNhanVien = new QuanLyNhanVien();
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int luaChon = -1;
@@ -38,13 +39,22 @@ public class Main {
                         System.out.println("Nhập email: ");
                         String email = scanner.nextLine();
                         System.out.println("Nhập địa chỉ: ");
-                        String diaChi = scanner.nextLine();
+                        System.out.println("Số nhà: ");
+                        String soNha = scanner.nextLine();
+                        System.out.println("Xã: ");
+                        String xa = scanner.nextLine();
+                        System.out.println("Huyện: ");
+                        String huyen = scanner.nextLine();
+                        System.out.println("Tỉnh: ");
+                        String tinh = scanner.nextLine();
+                        DiaChi diaChi = new DiaChi(soNha, xa, huyen, tinh);
+
                         System.out.println("Nhập lương cứng: ");
                         double luongCung = Double.parseDouble(scanner.nextLine());
                         System.out.println("Nhập tiền thưởng: ");
                         double thuongFull = Double.parseDouble(scanner.nextLine());
                         System.out.println("Nhập tiền phạt: ");
-                        double phatFull =  Double.parseDouble(scanner.nextLine());
+                        double phatFull = Double.parseDouble(scanner.nextLine());
                         System.out.println("Nhập tiền bảo hiểm: ");
                         double baoHiem = Double.parseDouble(scanner.nextLine());
                         NhanVienFulltime nhanVienFulltime = new NhanVienFulltime(maNhanVien, hoTen, tuoi, soDienThoai, email, diaChi, luongCung, thuongFull, phatFull, baoHiem);
@@ -61,7 +71,15 @@ public class Main {
                         System.out.println("Nhập email: ");
                         String email = scanner.nextLine();
                         System.out.println("Nhập địa chỉ: ");
-                        String diaChi = scanner.nextLine();
+                        System.out.println("Số nhà: ");
+                        String soNha = scanner.nextLine();
+                        System.out.println("Xã: ");
+                        String xa = scanner.nextLine();
+                        System.out.println("Huyện: ");
+                        String huyen = scanner.nextLine();
+                        System.out.println("Tỉnh: ");
+                        String tinh = scanner.nextLine();
+                        DiaChi diaChi = new DiaChi(soNha, xa, huyen, tinh);
                         System.out.println("Nhập số giờ làm trong tháng: ");
                         double soGio = Double.parseDouble(scanner.nextLine());
                         System.out.println("Nhập số tiền thưởng trong tháng: ");
@@ -118,6 +136,7 @@ public class Main {
             }
         }
     }
+
     private static void tongLuongThoiVu() {
         double tongLuong = quanLyNhanVien.luongNVPartTime();
         System.out.println("Tổng lương của các nhân viên thời vụ: " + tongLuong);

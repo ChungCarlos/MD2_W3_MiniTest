@@ -6,11 +6,11 @@ public class NhanVien implements Comparable<NhanVien> {
     private int tuoi;
     private int soDienThoai;
     private String email;
-    private String diaChi;
+    private DiaChi diaChi;
     public NhanVien(){
     }
 
-    public NhanVien(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, String diaChi) {
+    public NhanVien(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, DiaChi diaChi) {
         this.maNhanVien = maNhanVien;
         this.hoTen = hoTen;
         this.tuoi = tuoi;
@@ -62,11 +62,11 @@ public class NhanVien implements Comparable<NhanVien> {
         this.email = email;
     }
 
-    public String getDiaChi() {
+    public DiaChi getDiaChi() {
         return diaChi;
     }
 
-    public void setDiaChi(String diaChi) {
+    public void setDiaChi(DiaChi diaChi) {
         this.diaChi = diaChi;
     }
     public double tongLuong(){

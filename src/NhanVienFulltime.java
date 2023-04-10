@@ -5,7 +5,7 @@ private double baoHiem;
 private double luongCung;
 
 
-    public NhanVienFulltime(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, String diaChi,double luongCung,double thuongFull,double phatFull,double baoHiem) {
+    public NhanVienFulltime(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, DiaChi diaChi,double luongCung,double thuongFull,double phatFull,double baoHiem) {
         super(maNhanVien, hoTen, tuoi, soDienThoai, email, diaChi);
         this.luongCung = luongCung;
         this.thuongFull = thuongFull;
