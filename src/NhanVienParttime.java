@@ -43,10 +43,16 @@ public class NhanVienParttime extends NhanVien{
 
     @Override
     public String toString() {
-        return "NhanVienParttime{" +
-                "soGioLam=" + soGioLam +
-                ", thuongPart=" + thuongPart +
-                ", phatPart=" + phatPart +
-                '}';
+        return " Nhân viên thời vụ: \n"+
+                " Mã nhân viên: " + getMaNhanVien() +
+                " Họ tên :\n" + getHoTen()+
+                " Tuổi: \n" + getTuoi() +
+                " Số điện thoại: \n" + getSoDienThoai() +
+                " Email: \n" + getEmail() +
+                " Địa chỉ: \n" + getDiaChi() +
+                " Số giờ làm: \n" + getSoGioLam() +
+                " Thưởng: \n" + getThuongPart() +
+                " Phạt: \n" + getPhatPart()
+                ;
     }
 }

@@ -52,11 +52,17 @@ private double luongCung;
 
     @Override
     public String toString() {
-        return "NhanVienFulltime{" +
-                "thuongFull=" + thuongFull +
-                ", phatFull=" + phatFull +
-                ", baoHiem=" + baoHiem +
-                ", luongCung=" + luongCung +
-                '}';
+        return " Nhân viên toàn thời gian: \n"+
+                " Mã nhân viên: " + getMaNhanVien() +
+                " Họ tên :\n" + getHoTen()+
+                " Tuổi: \n" + getTuoi() +
+                " Số điện thoại: \n" + getSoDienThoai() +
+                " Email: \n" + getEmail() +
+                " Địa chỉ: \n" + getDiaChi() +
+                " Lương cứng: \n" + getLuongCung() +
+                " Thưởng: \n" + getThuongFull() +
+                " Phạt: \n" + getPhatFull()+
+                " Bảo Hiểm: \n" + getBaoHiem()
+                ;
     }
 }
