@@ -41,7 +41,7 @@ public class QuanLyNhanVien {
     // Tìm kiếm Nhan viên theo tên từ bàn phím...
     public void timNhanVien(String ten) {
         for (NhanVien nhanVien : danhSachNV) {
-            if (nhanVien.getHoTen().indexOf(ten) >= 0) {
+            if (nhanVien.getMaNhanVien().indexOf(ten) >= 0) {
                 System.out.println(nhanVien);
             }
         }
