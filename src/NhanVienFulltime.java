@@ -53,16 +53,16 @@ private double luongCung;
     @Override
     public String toString() {
         return " Nhân viên toàn thời gian: \n"+
-                " Mã nhân viên: " + getMaNhanVien() +
-                " Họ tên :\n" + getHoTen()+
-                " Tuổi: \n" + getTuoi() +
-                " Số điện thoại: \n" + getSoDienThoai() +
-                " Email: \n" + getEmail() +
-                " Địa chỉ: \n" + getDiaChi() +
-                " Lương cứng: \n" + getLuongCung() +
-                " Thưởng: \n" + getThuongFull() +
-                " Phạt: \n" + getPhatFull()+
-                " Bảo Hiểm: \n" + getBaoHiem()
+                " Mã nhân viên: " + getMaNhanVien() +"\n" +
+                " Họ tên :" + getHoTen() +"\n" +
+                " Tuổi: " + getTuoi() +"\n" +
+                " Số điện thoại: " + getSoDienThoai() +"\n" +
+                " Email: " + getEmail() +"\n" +
+                " Địa chỉ: " + getDiaChi() +"\n" +
+                " Lương cứng: " + getLuongCung() +"\n" +
+                " Thưởng: " + getThuongFull() +"\n" +
+                " Phạt: " + getPhatFull()+"\n" +
+                " Bảo Hiểm: " + getBaoHiem()
                 ;
     }
 }

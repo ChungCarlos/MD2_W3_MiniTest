@@ -74,11 +74,13 @@ public class Main {
                     break;
                 }
                 case 2: {
+                    System.out.println("Danh sách nhân viên:");
                     quanLyNhanVien.inDanhSachNhanVien();
                     break;
                 }
                 case 3: {
-                    quanLyNhanVien.soLuongNhanVien();
+                    System.out.println(" Số lượng nhân viên trong công ty: ");
+                    System.out.println(quanLyNhanVien.soLuongNhanVien());
                     break;
                 }
                 case 4: {

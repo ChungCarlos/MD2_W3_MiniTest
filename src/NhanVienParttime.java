@@ -1,10 +1,10 @@
-public class NhanVienParttime extends NhanVien{
+public class NhanVienParttime extends NhanVien {
     private double soGioLam;
     private double thuongPart;
     private double phatPart;
 
 
-    public NhanVienParttime(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, String diaChi,double soGioLam, double thuongPart,double phatPart) {
+    public NhanVienParttime(String maNhanVien, String hoTen, int tuoi, int soDienThoai, String email, String diaChi, double soGioLam, double thuongPart, double phatPart) {
         super(maNhanVien, hoTen, tuoi, soDienThoai, email, diaChi);
         this.soGioLam = soGioLam;
         this.thuongPart = thuongPart;
@@ -43,16 +43,16 @@ public class NhanVienParttime extends NhanVien{
 
     @Override
     public String toString() {
-        return " Nhân viên thời vụ: \n"+
-                " Mã nhân viên: " + getMaNhanVien() +
-                " Họ tên :\n" + getHoTen()+
-                " Tuổi: \n" + getTuoi() +
-                " Số điện thoại: \n" + getSoDienThoai() +
-                " Email: \n" + getEmail() +
-                " Địa chỉ: \n" + getDiaChi() +
-                " Số giờ làm: \n" + getSoGioLam() +
-                " Thưởng: \n" + getThuongPart() +
-                " Phạt: \n" + getPhatPart()
+        return " Nhân viên thời vụ: \n" +
+                " Mã nhân viên: " + getMaNhanVien() + "\n" +
+                " Họ tên :" + getHoTen() + "\n" +
+                " Tuổi: " + getTuoi() + "\n" +
+                " Số điện thoại: " + getSoDienThoai() + "\n" +
+                " Email: " + getEmail() + "\n" +
+                " Địa chỉ: " + getDiaChi() + "\n" +
+                " Số giờ làm: " + getSoGioLam() + "\n" +
+                " Thưởng: " + getThuongPart() + "\n" +
+                " Phạt: " + getPhatPart()
                 ;
     }
 }
